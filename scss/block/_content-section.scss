@@ -1,0 +1,120 @@
+.content-section {
+    max-width: 1107.5px;
+    height: 556px;
+    margin: 0 auto;
+}
+
+.content__item-wrapper {
+    padding: 37px 0;
+}
+
+.content__item {
+    max-width: 1107.5px;
+    height: 556px;
+    margin-top: 250px;
+}
+
+.content__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__item-wrapper-title {
+    color: #22343D;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.content__item-wrapper-subtitle {
+    max-width: 693px;
+    color: #22343D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.card__wrapper-title {
+    color: #22343D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.card-subtitle-link-main {
+    max-width: 294px;
+    height: 70px;
+    color: #22343D;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    transition: 0.5s;
+
+    &:hover {
+        color: #02897A;
+    }
+}
+
+.content__item-cards {
+    max-width: 348px;
+    height: 359px;
+    border-radius: 8px;
+    border: 1px solid #DEDEDE;
+}
+
+.card-wrapper {
+    line-height: 15px;
+    padding: 26px 20px 27px 24px;
+}
+
+.builds {
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+@media (max-width:764px) {
+
+    .content__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 50px;
+        gap: 50px;
+    }
+
+    .content__item-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+}
+
+@media (max-width: 820px) {
+
+    .content__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 50px 50px;
+        gap: 50px;
+    }
+
+    .content__item-wrapper {
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+}

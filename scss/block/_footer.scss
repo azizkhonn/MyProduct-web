@@ -1,0 +1,140 @@
+.site-footer {
+    max-width: 1109px;
+    height: 205px;
+    margin: 0 auto;
+    margin-top: 220px;
+}
+
+.social__media-icons {
+    display: flex;
+    gap: 24px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.footer__navbar-wrapper {
+    margin: 0 auto;
+    gap: 100px;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer__navbar {
+    display: inline-flex;
+    padding: 0px 24px 27px 0px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__navbar-menu:nth-child(2) {
+    max-width: 147px;
+}
+
+.footer__navbar-link {
+    color: #22343D;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    transition: 0.8s;
+
+    &:hover {
+        color: #02897A;
+        transition: 0.8s;
+        text-decoration: underline;
+    }
+}
+
+.footer-title {
+    max-width: 280px;
+    height: 57px;
+}
+
+.footer-subtitle {
+    color: #22343D;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#email {
+    max-width: 325px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #BCD0E5;
+    background: #FFF;
+}
+
+.footer__wrapper-subbmit {
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__submit-btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 15px 20px 15px;
+    border-radius: 4px;
+    background-color: #02897A;
+    border: 1px solid #fff;
+    transition: 0.6s;
+
+    &:hover {
+        background-color: #FFF;
+        border: 1px solid #02897A;
+        color: #22343D;
+    }
+}
+
+@media(max-width:727px) {
+    .footer__navbar-wrapper {
+        text-align: center;
+        max-width: 727px;
+        height: 745px;
+        margin: 0 auto;
+        gap: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:414px) {
+    .footer__navbar-wrapper {
+        max-width: 727px;
+        height: 745px;
+        margin: 0 auto;
+        gap: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__navbar {
+        display: inline-flex;
+        padding: 0px 24px 27px 0px;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}

@@ -4,13 +4,16 @@
   margin: 0 auto;
 }
 
+
 .main__wrapper-elements {
-  width: 521px;
-  margin-left: 310px;
+  display: flex;
   margin-top: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .main__wrapper-title {
+  max-width: 539px;
   color: #22343d;
   text-align: center;
   font-family: Poppins;
@@ -22,18 +25,26 @@
 
 .main__wrapper-cards {
   margin: 61px 2px;
-  width: 1233px;
+  max-width: 1233px;
   height: 204px;
   display: flex;
   justify-content: space-between;
 }
 
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
 .wrapper__card:nth-child(1) {
-  width: 240px;
+  max-width: 240px;
   height: 200px;
   gap: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
@@ -48,14 +59,17 @@
 }
 
 .wrapper__card:nth-child(2) {
-  width: 240px;
+  max-width: 240px;
   height: 200px;
   gap: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
+
   &:hover {
     opacity: 0.8;
     color: #ffffff;
@@ -66,11 +80,13 @@
 }
 
 .wrapper__card:nth-child(3) {
-  width: 240px;
+  max-width: 240px;
   height: 200px;
   gap: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
@@ -85,11 +101,12 @@
 }
 
 .wrapper__card:nth-child(4) {
-  width: 240px;
+  max-width: 240px;
   height: 200px;
   gap: 30px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
@@ -104,9 +121,9 @@
 }
 
 .wrapper-cards-btn-wrapper {
-  width: 175px;
-  height: 53px;
-  margin: 0 auto;
+  height: 56px;
+  width: 181px;
+  margin: 54px auto;
 }
 
 .wrapper-cards-btn {
@@ -114,85 +131,65 @@
   font-family: Poppins;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
-  padding: 15px 30px 14px;
+  text-align: center;
   border-radius: 4px;
-  display: inline;
+  border: 1px solid #bcd0e5;
+  padding: 10px 15px 9px;
+  transition: 0.9;
+  border-radius: 4px;
   background-color: #02897a;
-  border: 1px solid #02897a;
+  transition: 0.6s;
 
   &:hover {
+    border: 1px solid #173a56;
+    color: #000;
     background-color: #fff;
-    border: 1px solid #02897a;
-    color: #02897a;
-    transition: 0.5s;
   }
 }
 
-@media (max-width: 947px) {
-  .main__wrapper-elements {
-    margin-left: 230px;
-    width: 332px;
-    text-align: center;
-  }
 .main__wrapper-cards {
-    margin: 45px 94px;
-    width: 669px;
-    height: 203px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width:934px) {
+  .main__wrapper-wrap {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1px 0px 7px 40px;
+    flex-direction: column;
   }
 
-  .wrapper-cards-btn-wrapper {
-    width: 175px;
-    height: 53px;
-    margin: 280px auto;
-}
-}
 
 
-@media (max-width: 745px){
-    .main__wrapper-elements {
-      margin-left: 45px;
-      width: 332px;
-      text-align: center;
-  }
-
-   .wrapper-cards-btn-wrapper {
-    
-    width: 175px;
-    height: 53px;
-    margin: 0 auto;
-}
-
-.wrapper__card:nth-child(1){
-    text-align: center;
-}
-
-.wrapper__card:nth-child(2){
-    text-align: center;
-}
-
-.wrapper__card:nth-child(3){
-    text-align: center;
-}
-
-.wrapper__card:nth-child(4){
-    text-align: center;
-}
-
-  .main__wrapper-cards{
-    margin: 45px auto;
-    width: 411px;
-    margin-left: 55px;
-    height: 1095px;
+  .main__wrapper-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1px 0px 7px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
   }
 
+  .wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
   }
+
+  .wrapper__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper__card-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wrapper__card-subtitle-p {
+    text-align: center;
+  }
+}
