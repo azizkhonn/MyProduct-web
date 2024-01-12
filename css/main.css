@@ -1169,6 +1169,10 @@ template {
   .folder__wrapper:nth-child(1) {
     margin-top: 100px;
   }
+  .folder__wrapper1 {
+    max-width: 100%;
+    margin-top: 400px;
+  }
   .services__wrapper-wrap {
     max-width: 486px;
     display: flex;
@@ -1199,8 +1203,9 @@ template {
   .folder__wrapper {
     max-width: 100%;
   }
-  folder__wrapper1 {
-    margin-top: 100px;
+  .folder__wrapper1 {
+    max-width: 100%;
+    margin-top: 400px;
   }
 }
 .experts-section {
